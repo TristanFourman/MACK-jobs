@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MACK Jobs</title>
+  <meta name="description" content="Engineering-focused job finder and application tracker." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">M</span><span>MACK <b>JOBS</b></span></a>
+    <nav>
+      <a href="#jobs">Find Jobs</a>
+      <a href="#saved">Saved</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#profile">My Profile</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">ENGINEERING CAREER LAUNCHER</p>
+        <h1>Find a job that <span>fits your skills.</span></h1>
+        <p class="hero-copy">A simple job finder built around CAD, SolidWorks, AutoCAD, manufacturing, CNC, and engineering careers.</p>
+        <a class="primary-btn" href="#jobs">Start searching ↓</a>
+      </div>
+      <div class="hero-card">
+        <div class="score-ring">82<span>%</span></div>
+        <div><strong>Best Match</strong><p>Jobs are ranked against your skills and goals.</p></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong id="jobCount">0</strong><span>Jobs loaded</span></div>
+      <div><strong id="savedCount">0</strong><span>Saved jobs</span></div>
+      <div><strong id="appliedCount">0</strong><span>Applications</span></div>
+      <div><strong>Dayton</strong><span>Starting area</span></div>
+    </section>
+
+    <section id="jobs" class="section">
+      <div class="section-heading"><div><p class="eyebrow">JOB SEARCH</p><h2>Opportunities for you</h2></div><span class="live-note">MVP job data</span></div>
+      <div class="search-panel">
+        <input id="search" type="search" placeholder="Search CAD, SolidWorks, CNC, engineer..." />
+        <select id="category"><option value="">All categories</option><option>CAD / Design</option><option>Mechanical Engineering</option><option>Manufacturing</option><option>CNC / Machining</option><option>Aerospace</option><option>Architecture</option></select>
+        <select id="level"><option value="">All experience levels</option><option value="entry">Entry level</option><option value="early">Early career</option></select>
+        <select id="salary"><option value="0">Any salary</option><option value="50000">$50K+</option><option value="60000">$60K+</option><option value="70000">$70K+</option></select>
+      </div>
+      <div class="chips"><button class="chip active" data-chip="">All</button><button class="chip" data-chip="SolidWorks">SolidWorks</button><button class="chip" data-chip="AutoCAD">AutoCAD</button><button class="chip" data-chip="CNC">CNC</button><button class="chip" data-chip="Manufacturing">Manufacturing</button><button class="chip" data-chip="Aerospace">Aerospace</button></div>
+      <div id="jobList" class="job-list"></div>
+    </section>
+
+    <section id="saved" class="section alt"><div class="section-heading"><div><p class="eyebrow">YOUR SHORTLIST</p><h2>Saved jobs</h2></div></div><div id="savedList" class="saved-empty">Save jobs above and they will appear here.</div></section>
+
+    <section id="tracker" class="section"><div class="section-heading"><div><p class="eyebrow">APPLICATION TRACKER</p><h2>Keep moving forward</h2></div></div><div class="tracker-grid"><div class="track-card"><span>Saved</span><strong id="trackSaved">0</strong></div><div class="track-card"><span>Applied</span><strong id="trackApplied">0</strong></div><div class="track-card"><span>Interview</span><strong id="trackInterview">0</strong></div><div class="track-card"><span>Offer</span><strong id="trackOffer">0</strong></div></div></section>
+
+    <section id="profile" class="section profile"><div><p class="eyebrow">MY PROFILE</p><h2>Build your match.</h2><p>Add your skills here as we build the next version. Your profile will eventually power automatic job matching.</p></div><div class="skill-box"><span>Current skills</span><div><b>SolidWorks</b><b>AutoCAD</b><b>Engineering Design</b><b>3D Printing</b></div></div></section>
+  </main>
+  <footer>MACK JOBS · Built for the next step in your engineering career.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
